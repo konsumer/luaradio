@@ -307,8 +307,13 @@ function RtlSdrSource:run()
 end
 
 function RtlSdrSource:setFreqency(freq)
-    print(freq)
-    print(self)
+    self.frequency = freq
+    -- there is no ref to dev, so this doesn't work:
+    -- local ret = librtlsdr.rtlsdr_set_center_freq(self.dev[0], self.frequency)
+    -- if ret ~= 0 then
+    --     error("rtlsdr_set_center_freq(): " .. tostring(ret))
+    -- end
+
 end
 
 return RtlSdrSource

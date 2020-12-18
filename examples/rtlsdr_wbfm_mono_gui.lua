@@ -1,7 +1,7 @@
 --- this illustrates async radio control using fltk
 
 -- install deps with `luarocks install fltk4lua`
--- run with `./luaradio examples/rtlsdr_wbfm_stereo_gui.lua`
+-- run with `./luaradio examples/rtlsdr_wbfm_mono_gui.lua`
 
 local fl = require 'fltk4lua'
 local radio = require 'radio'
@@ -41,7 +41,6 @@ function spinner_frequency:callback()
     print(spinner_frequency.value)
     source:setFreqency(spinner_frequency.value)
 end
-
 
 window:show()
 
