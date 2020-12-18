@@ -306,4 +306,9 @@ function RtlSdrSource:run()
     end
 end
 
+function RtlSdrSource:setFreqency(freq)
+    print(freq)
+    print(self)
+end
+
 return RtlSdrSource
