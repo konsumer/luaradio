@@ -126,6 +126,8 @@ return {
     POCSAGDecoderBlock = require('radio.blocks.protocol.pocsagdecoder'),
     --- Varicode
     VaricodeDecoderBlock = require('radio.blocks.protocol.varicodedecoder'),
+    --- ADS-B
+    ADSBFramerBlock = require('radio.blocks.protocol.adsbframer'),
     --- ERT
     IDMFramerBlock = require('radio.blocks.protocol.idmframer'),
     SCMFramerBlock = require('radio.blocks.protocol.scmframer'),
