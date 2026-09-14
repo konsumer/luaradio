@@ -23,5 +23,6 @@ return {
     AX25Receiver = require('radio.composites.ax25receiver'),
     POCSAGReceiver = require('radio.composites.pocsagreceiver'),
     BPSK31Receiver = require('radio.composites.bpsk31receiver'),
+    ADSBReceiver = require('radio.composites.adsbreceiver'),
     ERTReceiver = require('radio.composites.ertreceiver'),
 }
